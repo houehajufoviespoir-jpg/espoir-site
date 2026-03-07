@@ -301,4 +301,18 @@ button:hover {
 @keyframes rise {
     0% { transform: translateY(100vh); }
     100% { transform: translateY(-100vh); }
+
+}
+* Ce code s'active uniquement sur les écrans de moins de 768px (mobiles) */
+@media (max-width: 768px) {
+  img {
+    max-width: 100%; /* Ton portrait prendra toute la largeur du téléphone */
+    height: auto;
+  }
+  
+  .container-des-passions { /* Remplace par le nom de ta classe */
+    display: flex;
+    flex-wrap: wrap; /* Les boutons iront à la ligne tout seuls au lieu de rétrécir */
+    justify-content: center;
+  }
 }
